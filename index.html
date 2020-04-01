@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <div class="outer-wrapper">
       <div class="wrapper">
-        <h1>notes.txt</h1>
+        <header>
+          <h1>notes.txt</h1>
+        </header>
       </div>
-    </header>
+    </div>
 
     <main class="wrapper">
       <!-- info section (aside?) -->
@@ -131,15 +133,20 @@
       </section>
     </main>
 
-    <footer>
-      <div class="wrapper footer__content">
-        <p class="copyright">
-          &copy; 2020
-          <a href="https://yiying.ca" target="_blank" rel="noreferrer noopener"
-            >Yiying Zou</a
-          >, powered by Wordpress
-        </p>
+    <div class="outer-wrapper">
+      <footer class="wrapper">
+        <div class="footer__content">
+          <p class="copyright">
+            &copy; 2020
+            <a
+              href="https://yiying.ca"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Yiying Zou</a
+            >, powered by Wordpress
+          </p>
+        </footer>
       </div>
-    </footer>
+    </div>
   </body>
 </html>

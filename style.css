@@ -221,7 +221,6 @@ footer {
 
 header {
   height: 200px;
-  margin-bottom: 50px;
   background: linear-gradient(
     123deg,
     #e9cad9 0%,
@@ -238,6 +237,7 @@ header {
 }
 
 footer {
+  height: 62px;
   background: linear-gradient(
     123deg,
     #e9cad9 0%,
@@ -254,6 +254,8 @@ footer {
 }
 
 main {
+  min-height: calc(100vh - 262px);
+  padding-top: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -267,9 +269,20 @@ aside {
   width: 68%;
 }
 
+.outer-wrapper {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #e9cad9 0%,
+    #e9cad9 50%,
+    #a5003a 50%,
+    #a5003a 100%
+  );
+}
+
 .wrapper {
   width: 75%;
-  max-width: 1270px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
