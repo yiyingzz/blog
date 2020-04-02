@@ -176,7 +176,6 @@ input::-moz-focus-inner {
 }
 
 /* GLOBAL */
-
 html {
   font-size: 62.5%;
 }
@@ -202,8 +201,7 @@ a {
 
 a:hover,
 a:focus {
-  /* color: #ff8575; */
-  padding: 2px 4px;
+  padding: 2px 0.4em;
   outline: 2px solid #19d19a;
   transform: scale(1.1);
 }
@@ -299,35 +297,10 @@ aside {
 }
 
 /* HEADER */
-
 h1 {
   padding-top: 120px;
   margin: 0;
   font-size: 3.8rem;
-}
-
-/* NAV */
-.navbar {
-  display: flex;
-  list-style: none;
-}
-
-.navbar a {
-  color: #e9cad9;
-}
-
-.navbar a:hover,
-.navbar a:focus {
-  color: #fff;
-  background: #e9cad9;
-}
-
-.top-button {
-  background: red;
-  border: 0;
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
 }
 
 /* SIDEBAR */
