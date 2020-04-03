@@ -8,17 +8,104 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <div class="outer-wrapper">
       <div class="wrapper">
-        <h1>notes.txt</h1>
+        <header>
+          <h1><a href="/" class="heading-link">notes.txt</a></h1>
+        </header>
       </div>
-    </header>
+    </div>
 
     <main class="wrapper">
-      <!-- info section (aside?) -->
+      <!-- blog section -->
+      <section class="blog">
+        <article>
+          <p class="post__date">date</p>
+          <h2 class="post__title">
+            <a href="#" class="heading-link">Blog Title</a>
+          </h2>
+          <p>
+            blog post body Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consectetur odio ad obcaecati sapiente facilis autem
+            doloremque voluptas perspiciatis quibusdam quae beatae voluptates at
+            excepturi ab praesentium modi, accusantium architecto pariatur quam
+            rerum! Necessitatibus, nemo. Illo nobis perferendis veniam, tenetur,
+            doloribus amet omnis pariatur doloremque ex atque cumque quas alias
+            esse rerum expedita. Deserunt commodi in quos.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            quibusdam ipsa, dolor neque nam repudiandae eligendi reprehenderit
+            nisi aliquid distinctio ab? Aut optio facere debitis quis! Facere
+            quisquam ut hic incidunt culpa animi non eius. Ut omnis optio ea
+            delectus.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsa
+            quam sequi, obcaecati consequatur sed, blanditiis, quasi itaque
+            delectus unde illum quae. Odit labore et sunt repudiandae amet dolor
+            qui deleniti voluptas excepturi sint atque voluptatibus nisi,
+            distinctio magnam. Consequatur molestiae totam facilis enim
+            praesentium pariatur accusantium. Doloribus vitae et sequi veniam
+            cumque aut, accusantium aspernatur magni voluptatum animi explicabo?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+            culpa!
+          </p>
+        </article>
+
+        <!-- comments section -->
+        <section class="post-comments">
+          <h3 class="post-comments__title">Comments</h3>
+
+          <div class="comment">
+            <p>
+              <a href="#"><span class="comment__name">Name</span></a>
+              <span class="comment__datetime">@ Date & Time</span>
+            </p>
+
+            <p class="comment__message">
+              Message Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Et placeat iste, pariatur atque aliquam velit vero sequi ad
+              dolorum molestiae sed itaque molestias distinctio, quaerat
+              repellendus. Hic earum reiciendis quia perspiciatis sit vel
+              incidunt molestias?
+            </p>
+          </div>
+
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+
+            <label for="contact">Email or URL</label>
+            <input type="text" id="contact" />
+
+            <label for="message">Message</label>
+            <textarea
+              name="messate"
+              id="message"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+        <!-- /.comments section -->
+
+        <div class="blog__arrows">
+          <p><a href="#">&les; Previous Post</a></p>
+          <p><a href="">Next Post &ges;</a></p>
+        </div>
+      </section>
+      <!-- /.blog section -->
+
+      <!-- sidebar -->
       <aside>
         <div class="sidebar sidebar__img">
           <img
@@ -44,13 +131,11 @@
             ><img src="./assets/icons/389-mail2.svg" alt="" />
             yiyingzou@gmail.com</a
           >
+          <a href="https://github.com/yiyingzz"
+            ><img src="./assets/icons/433-github.svg" alt="" /> yiyingzz</a
+          >
           <a href="https://twitter.com/yiyingzz"
-            ><img
-              src="./assets/icons/407-twitter.svg"
-              alt=""
-              class="social-icon"
-            />
-            yiyingzz</a
+            ><img src="./assets/icons/407-twitter.svg" alt="" /> yiyingzz</a
           >
         </div>
 
@@ -76,46 +161,22 @@
           <a href="">Blog Archive</a>
         </div>
       </aside>
-
-      <!-- blog section -->
-      <section class="blog">
-        <article>
-          <p class="post__date">date</p>
-          <h2 class="post__title">Blog Title (h2)</h2>
-          <p>
-            blog post body Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Consectetur odio ad obcaecati sapiente facilis autem
-            doloremque voluptas perspiciatis quibusdam quae beatae voluptates at
-            excepturi ab praesentium modi, accusantium architecto pariatur quam
-            rerum! Necessitatibus, nemo. Illo nobis perferendis veniam, tenetur,
-            doloribus amet omnis pariatur doloremque ex atque cumque quas alias
-            esse rerum expedita. Deserunt commodi in quos.
-          </p>
-        </article>
-
-        <section class="comments">
-          <h3>Comments</h3>
-
-          <div class="comments__single">
-            <!--  -->
-          </div>
-
-          <form action=""></form>
-        </section>
-
-        <div class="blog__arrows">
-          <p><a href="#">&les; Previous Page</a></p>
-          <p><a href="">Next Page &ges;</a></p>
-        </div>
-      </section>
     </main>
 
-    <footer>
-      <div class="wrapper footer__content">
-        <p class="copyright">
-          &copy; 2020 Yiying Zou, powered by Wordpress
-        </p>
-      </div>
-    </footer>
+    <div class="outer-wrapper">
+      <footer class="wrapper">
+        <div class="footer__content">
+          <p class="copyright">
+            &copy; 2020
+            <a
+              href="https://yiying.ca"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Yiying Zou</a
+            >, powered by Wordpress
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

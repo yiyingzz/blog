@@ -196,18 +196,35 @@ a {
   color: #bd1f7b;
   text-decoration: none;
   display: inline-block;
-  transition: 0.3s all;
+  transition: 0.2s all;
 }
 
 a:hover,
 a:focus {
-  padding: 2px 0.4em;
+  padding: 0.1em 0.3em;
   outline: 2px solid #19d19a;
   transform: scale(1.1);
 }
 
 .heading-link {
   color: #91002e;
+}
+
+button {
+  background: #bd1f7b;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 20px;
+  transition: 0.2s all;
+  border: 0;
+}
+
+button:hover,
+button:focus {
+  background: #fff;
+  color: #bd1f7b;
+  outline: 2px solid #19d19a;
+  padding: 10px 26px;
 }
 
 em {
@@ -267,6 +284,7 @@ main {
   min-height: calc(100vh - 262px);
   padding-top: 50px;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
 }
 
@@ -452,4 +470,91 @@ article {
 .copyright a:hover,
 .copyright a:focus {
   border-bottom: 0;
+}
+
+/* COMMENTS */
+.post-comments {
+  margin-top: 80px;
+}
+
+.post-comments__title {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.post-comments__title::after {
+  content: "";
+  background: #19d19a;
+  display: block;
+  width: 60px;
+  height: 3px;
+  position: relative;
+  top: 15px;
+}
+
+.comment p {
+  margin: 0;
+}
+
+.comment p:first-of-type {
+  margin-top: 20px;
+}
+
+.comment p:last-of-type {
+  margin-bottom: 20px;
+}
+
+.comment__name {
+  font-family: "Inconsolata", monospace;
+}
+
+.comment__datetime {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.comment__message {
+  font-size: 1.6rem;
+}
+
+/* COMMENT FORM */
+.post-comments form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.post-comments label,
+.post-comments input,
+.post-comments textarea {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+}
+
+.post-comments label {
+  padding-top: 10px;
+  margin-bottom: 5px;
+  font-family: "Inconsolata", monospace;
+  text-transform: lowercase;
+  font-size: 2rem;
+  color: #91002e;
+}
+
+.post-comments input,
+.post-comments textarea {
+  padding: 10px;
+  border: 2px solid #999;
+}
+
+.post-comments input:hover,
+.post-comments input:focus,
+.post-comments textarea:hover,
+.post-comments textarea:focus {
+  outline: 2px solid #19d19a;
+}
+
+.post-comments button {
+  width: 120px;
+  margin: 20px auto 0;
 }

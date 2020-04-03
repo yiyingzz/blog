@@ -210,7 +210,7 @@ a {
 
 a:hover,
 a:focus {
-  padding: 2px 0.4em;
+  padding: 0.4em 0.4em;
   outline: 2px solid #19d19a;
   transform: scale(1.1);
 }
