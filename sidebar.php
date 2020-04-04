@@ -35,32 +35,34 @@
     <h3>Recent Posts</h3>
     <ul>
 
-    <?php
-      while (have_posts()) {
-
-          the_post();
-    ?>
-
-      <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-
-    <?php
-      }
-    ?>
+      <?php wp_get_archives('title_li=&type=postbypost&limit=5'); ?>
 
     </ul>
   </div>
 
-  <div class="sidebar sidebar__tags">
-    <h3>Tags</h3>
-    <ul>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-    </ul>
-  </div>
+<?php
+  $tags = get_tags();
+  $html = '
+    <div class="sidebar sidebar__tags">
+      <h3>Tags</h3>
+        <ul>
+  ';
+      
+  if ($tags) {
+    foreach ($tags as $tag) {
+      $tag_link = get_tag_link($tag);
+      $html .= "<li><a href='{$tag_link}'>$tag->name</a></li>";
+    }
+    $html .= '
+        </ul>
+      </div>
+    ';
+    echo $html;
+  }
+?>
 
   <div class="sidebar sidebar__archive">
-    <a href="<?php echo site_url('./archive/'); ?>">Blog Archive</a>
+    <a href="<?php echo site_url('./blog-archive/'); ?>">Blog Archive</a>
     <a href="<?php echo site_url('./tutorials-tidbits/') ?>">Tutorials & Tidbits</a>
   </div>
 </aside>
