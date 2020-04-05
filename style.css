@@ -395,30 +395,40 @@ h3 {
   padding-bottom: 0;
 }
 
+/* TAGS (both sidebar & post) */
 .sidebar__tags ul {
   list-style: none;
   padding-left: 0;
 }
 
+.post__tags p,
+.post__tags ul {
+  display: inline-block;
+}
+
+.post__tags li,
 .sidebar__tags li {
   display: inline-block;
   margin: 0 5px 5px 0;
   text-transform: lowercase;
 }
 
+.post__tags li a,
 .sidebar__tags li a {
   border: 2px solid #cc3994;
   border-radius: 20px;
   padding: 0 8px;
 }
 
-.sidebar__tags li a:hover {
+.post__tags li a:hover,
+.post__tags li a:focus,
+.sidebar__tags li a:hover,
+.sidebar__tags li a:focus {
   border: 2px solid #19d19a;
-  outline: none;
 }
 
 /* BLOG POSTS */
-article {
+.blog-post {
   margin-bottom: 50px;
 }
 
@@ -591,4 +601,17 @@ article {
 .post-comments button {
   width: 120px;
   margin: 20px auto 0;
+}
+
+/* CODE FORMATTING */
+
+.wp-block-code {
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+code {
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
 }

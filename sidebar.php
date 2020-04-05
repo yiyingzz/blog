@@ -15,7 +15,7 @@
     </p>
     <p>
       Why <em>notes.txt</em>? I love Notepad and use it constantly to jot
-      down whatever's on my mind.
+      down whatever's on my mind. I also use it to draft all my blog posts😉
     </p>
   </div>
   <div class="sidebar sidebar__social">
