@@ -1,8 +1,8 @@
-<aside>
+<aside class="clearfix">
   <div class="sidebar sidebar__img">
     <img
       src="<?php echo get_theme_file_uri('./assets/profile.jpg') ?>"
-      alt="Yiying Zou, front end developer"
+      alt="A picture of Yiying Zou, front end developer"
       class="sidebar__img__profile"
     />
     <img src="<?php echo get_theme_file_uri('./assets/hi.png'); ?>" alt="" class="sidebar__img__hi" />
@@ -19,9 +19,9 @@
     </p>
   </div>
   <div class="sidebar sidebar__social">
-    <a href="#"
-      ><img src="<?php echo get_theme_file_uri('./assets/icons/389-mail2.svg'); ?>" alt="" />
-      yiyingzou@gmail.com</a
+    <a href="https://yiying.ca" target="_blank" rel="noopener noreferrer"
+      ><img src="<?php echo get_theme_file_uri('./assets/icons/202-sphere.svg'); ?>" alt="" />
+      yiying.ca</a
     >
     <a href="https://github.com/yiyingzz"
       ><img src="<?php echo get_theme_file_uri('./assets/icons/433-github.svg'); ?>" alt="" /> yiyingzz</a
@@ -62,7 +62,7 @@
 ?>
 
   <div class="sidebar sidebar__archive">
-    <a href="<?php echo site_url('./blog-archive/'); ?>">Blog Archive</a>
-    <a href="<?php echo site_url('./tutorials-tidbits/') ?>">Tutorials & Tidbits</a>
+    <p><a href="<?php echo site_url('./blog-archive/'); ?>">Blog Archive</a></p>
+    <p><a href="<?php echo site_url('./tutorials-tidbits/') ?>">Tutorials & Tidbits</a></p>
   </div>
 </aside>

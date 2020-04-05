@@ -11,9 +11,11 @@
   </head>
   <body>
     <div class="outer-wrapper">
-      <div class="wrapper">
+      <div class="header-wrapper">
         <header>
-          <h1><a href="<?php echo site_url(''); ?>" class="heading-link"><?php echo bloginfo('name'); ?></a></h1>
+          <div class="wrapper">
+            <h1><a href="<?php echo site_url(''); ?>" class="heading-link"><?php echo bloginfo('name'); ?></a></h1>
+          </div>
         </header>
       </div>
     </div>
