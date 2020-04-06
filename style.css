@@ -211,9 +211,9 @@ a {
 
 a:hover,
 a:focus {
-  padding: 0.1em 0.3em;
+  padding: 0px 5px;
   border: 2px solid #19d19a;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .heading-link {
@@ -234,10 +234,6 @@ button:focus {
   color: #bd1f7b;
   outline: 2px solid #19d19a;
   padding: 10px 26px;
-}
-
-em {
-  color: #bd1f7b;
 }
 
 h1,
@@ -337,6 +333,10 @@ aside p {
   margin-top: 0;
 }
 
+aside em {
+  color: #bd1f7b;
+}
+
 h3 {
   font-size: 2rem;
   margin: 0;
@@ -402,6 +402,10 @@ h3 {
   padding-left: 0;
 }
 
+.post__tags {
+  margin-bottom: 20px;
+}
+
 .post__tags p,
 .post__tags ul {
   display: inline-block;
@@ -432,6 +436,10 @@ h3 {
 /* BLOG POSTS */
 .blog-post {
   margin-bottom: 50px;
+}
+
+.blog-post h4 {
+  margin: 40px 0 0;
 }
 
 .post__date,
@@ -465,13 +473,26 @@ h3 {
   font-weight: bold;
 }
 
+/* POST IMAGES */
+
+/* figure */
+.wp-block-image {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.wp-block-image figcaption {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
 /* BLOG ARROWS */
 .blog__arrows {
   font-size: 1.4rem;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
   width: 100%;
 }
 
@@ -669,8 +690,9 @@ code {
 }
 
 @media (max-width: 789px) {
+  .header-wrapper,
   .wrapper {
-    width: 90%;
+    width: 90vw;
   }
 
   h1 {
@@ -679,6 +701,10 @@ code {
 
   .post__title {
     font-size: 2.6rem;
+  }
+
+  .sidebar__img:hover > .sidebar__img__hi {
+    display: none;
   }
 }
 
@@ -743,6 +769,11 @@ code {
 }
 
 @media (max-width: 420px) {
+  .wp-block-code,
+  .wp-block-image {
+    padding: 10px;
+  }
+
   .sidebar__img {
     float: none;
     margin-bottom: 20px;

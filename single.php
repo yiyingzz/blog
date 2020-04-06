@@ -3,7 +3,7 @@
   <main class="wrapper">
 
   
-    <section class="content-body body">
+    <section class="content-body blog-post">
 
     <?php 
       while (have_posts()) {

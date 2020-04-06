@@ -11,11 +11,10 @@
   </head>
   <body>
     <div class="outer-wrapper">
-      <div class="header-wrapper">
-        <header>
+        <header class="header-wrapper">
           <div class="wrapper">
             <h1><a href="<?php echo site_url(''); ?>" class="heading-link"><?php echo bloginfo('name'); ?></a></h1>
-          </div>
+            </div>
         </header>
       </div>
     </div>
