@@ -2,7 +2,6 @@
 
     <main class="wrapper">
 
-      <!-- blog section -->
       <section class="content-body index">
 
       <?php 
@@ -20,7 +19,7 @@
       </div>
 
       <?php
-        } //this is the closing bracket for the while loop
+        } 
       ?>
 
       </section>

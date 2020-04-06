@@ -3,7 +3,7 @@
   <main class="wrapper">
 
   
-    <section class="content-body blog-post">
+    <section class="content-body post">
 
     <?php 
       while (have_posts()) {
@@ -66,7 +66,7 @@
       </div>
 
     <?php  
-      } // end of while loop
+      }
     ?>
 
 
