@@ -19,14 +19,14 @@
     </p>
   </div>
   <div class="sidebar sidebar__social">
-    <a href="https://yiying.ca" target="_blank" rel="noopener noreferrer"
+    <a href="https://yiying.ca" target="_blank" rel="noopener noreferrer" aria-label="Go to my portfolio site at yiying.ca"
       ><img src="<?php echo get_theme_file_uri('./assets/icons/202-sphere.svg'); ?>" alt="" />
       yiying.ca</a
     >
-    <a href="https://github.com/yiyingzz"
+    <a href="https://github.com/yiyingzz" aria-label="Go to my Github account"
       ><img src="<?php echo get_theme_file_uri('./assets/icons/433-github.svg'); ?>" alt="" /> yiyingzz</a
     >
-    <a href="https://twitter.com/yiyingzz"
+    <a href="https://twitter.com/yiyingzz" aria-label="Go to my Twitter account"
       ><img src="<?php echo get_theme_file_uri('./assets/icons/407-twitter.svg'); ?>" alt="" /> yiyingzz</a
     >
   </div>
@@ -62,7 +62,8 @@
 ?>
 
   <div class="sidebar sidebar__archive">
-    <p><a href="<?php echo site_url('./blog-archive/'); ?>">Blog Archive</a></p>
-    <p><a href="<?php echo site_url('./tutorials-tidbits/') ?>">Tutorials & Tidbits</a></p>
+    <ul>  
+      <?php wp_list_pages('title_li') ?> 
+    </ul>
   </div>
 </aside>
